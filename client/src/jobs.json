@@ -1,0 +1,88 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Senior React Developer",
+      "type": "Full-Time",
+      "description": "We are seeking a talented Front-End Developer to join our team in London. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern frameworks such as React or Angular.",
+      "location": "London, England",
+      "salary": "£65K - £80K",
+      "company": {
+        "name": "NewTek Solutions UK",
+        "description": "NewTek Solutions UK is a leading technology company specialising in web development and digital solutions. We pride ourselves on delivering high-quality products and fostering a collaborative and innovative work environment.",
+        "contactEmail": "contact@teksolutions.co.uk",
+        "contactPhone": "020 7946 0958"
+      }
+    },
+    {
+      "id": "2",
+      "title": "Front-End Engineer (React & Redux)",
+      "type": "Full-Time",
+      "location": "Manchester, England",
+      "description": "Join our team as a Front-End Developer in Manchester. We are looking for a motivated individual with a passion for crafting responsive web applications. Experience with UI/UX principles and strong attention to detail are highly desirable.",
+      "salary": "£55K - £70K",
+      "company": {
+        "name": "Veneer Solutions UK",
+        "description": "Veneer Solutions is a creative agency specialising in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation.",
+        "contactEmail": "contact@veneersolutions.co.uk",
+        "contactPhone": "0161 496 0999"
+      }
+    },
+    {
+      "id": "3",
+      "title": "React.js Developer",
+      "type": "Full-Time",
+      "location": "Birmingham, England",
+      "description": "Are you passionate about front-end development? Join our team in Birmingham and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment.",
+      "salary": "£50K - £65K",
+      "company": {
+        "name": "Dolor Cloud UK",
+        "description": "Dolor Cloud is a leading technology company specialising in digital solutions for businesses of all sizes, with a strong focus on innovation and customer satisfaction.",
+        "contactEmail": "contact@dolorcloud.co.uk",
+        "contactPhone": "0121 496 0123"
+      }
+    },
+    {
+      "id": "4",
+      "title": "React Front-End Developer",
+      "type": "Part-Time",
+      "description": "Join our team as a Part-Time Front-End Developer in Bristol. We are looking for a self-motivated individual with a passion for creating engaging user experiences. Flexible hours and remote working options available.",
+      "location": "Bristol, England",
+      "salary": "£40K - £55K (pro rata)",
+      "company": {
+        "name": "Alpha Elite UK",
+        "description": "Alpha Elite is a dynamic startup specialising in digital marketing and web development. We foster a diverse and inclusive workplace where creativity thrives.",
+        "contactEmail": "contact@alphaelite.co.uk",
+        "contactPhone": "0117 496 0789"
+      }
+    },
+    {
+      "id": "5",
+      "title": "Full Stack React Developer",
+      "type": "Full-Time",
+      "description": "Exciting opportunity for a Full Stack Developer in Leeds. We are seeking a talented individual with a passion for building scalable web applications. Join our growing team and make an impact.",
+      "location": "Leeds, England",
+      "salary": "£70K - £90K",
+      "company": {
+        "name": "Browning Technologies UK",
+        "description": "Browning Technologies is a rapidly growing company specialising in e-commerce solutions. We offer a dynamic and collaborative environment.",
+        "contactEmail": "contact@browningtech.co.uk",
+        "contactPhone": "0113 496 0456"
+      }
+    },
+    {
+      "id": "6",
+      "title": "React Native Developer",
+      "type": "Full-Time",
+      "description": "Join our team as a React Native Developer in Edinburgh. We are looking for a skilled and enthusiastic individual to help build innovative mobile applications. Competitive salary and strong benefits package.",
+      "location": "Edinburgh, Scotland",
+      "salary": "£75K - £95K",
+      "company": {
+        "name": "Port Solutions UK",
+        "description": "Port Solutions is a leading technology company specialising in software development and digital marketing, committed to delivering cutting-edge solutions.",
+        "contactEmail": "contact@portsolutions.co.uk",
+        "contactPhone": "0131 496 0321"
+      }
+    }
+  ]
+}
