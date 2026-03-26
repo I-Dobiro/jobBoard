@@ -56,7 +56,7 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Catch-all (React router support)
-app.get("*", (req, res) => {
+app.get(/^(?!\/api).*/, (req, res) => {
   res.sendFile(path.join(__dirname, "../client/dist/index.html"));
 });
 

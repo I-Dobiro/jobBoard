@@ -20,6 +20,12 @@ const JobListings = ({ isHome = false }) => {
                 const data = await res.json();
                 setJobs(data.data);
 
+
+                // job limiting here
+                const limitedJobs = isHome ? data.data.slice(0, 3) : data.data;
+
+                setJobs(limitedJobs);
+
             } catch (error) {
                 console.error('Error fetching data:', error);
             } finally {
