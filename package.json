@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client && npm run db:sync --prefix server",
+    "build": "cd client && npm install && npm run build && cd ../server && npm install && npm run db:sync",
     "start": "npm run start --prefix server"
   },
   "repository": {
