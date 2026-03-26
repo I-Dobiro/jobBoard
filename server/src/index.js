@@ -4,12 +4,13 @@ import { PORT } from "./config/env.js";
 import { requireAuth } from "@clerk/express";
 import jobRoutes from "./routes/jobRoutes.js";
 import { sql } from "./db/index.js";
+import path from "path";
 
 
 const app = express();
 
 // // Serve static files
-// app.use(express.static(path.join(process.cwd(), "dist")));
+app.use(express.static(path.join(process.cwd(), "dist")));
 
 app.use(cors());
 app.use(express.json());
@@ -24,8 +25,8 @@ app.get("/api/health", (req, res) => {
 app.use("/api/jobs", jobRoutes); // job routes
 
 const initDb = async () => {
-    try {
-        await sql`
+  try {
+    await sql`
         CREATE TABLE IF NOT EXISTS jobs (
           id SERIAL PRIMARY KEY,
           title VARCHAR(255) NOT NULL,
@@ -42,17 +43,23 @@ const initDb = async () => {
           created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )`;
 
-        console.log('Database Initialised');
-    } catch (error) {
-        console.log('Error initialising database:', error.message);
-    }
+    console.log('Database Initialised');
+  } catch (error) {
+    console.log('Error initialising database:', error.message);
+  }
 };
 
-// // Catch-all (React router support)
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(process.cwd(), "dist", "index.html"));
-// });
+if (process.env.NODE_ENV === 'production') {
+  const __dirname = path.resolve();
+  // Serve static files
+  app.use(express.static(path.join(__dirname, "../client/dist")));
+}
+
+// Catch-all (React router support)
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/dist/index.html"));
+});
 
 initDb().then(() => {
-   app.listen(PORT, () => console.log(`Server running on port ${PORT}`)); 
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 })

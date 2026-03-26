@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed": "node src/seeds/jobs.js",
-    "dev": "nodemon"
+    "start": "node src/index.js",
+    "db:sync": "node src/seeds/jobs.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
